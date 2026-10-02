@@ -332,7 +332,7 @@ Item {
                 Image {
                     id: avatarImg
                     anchors.fill: parent
-                    source: "file:///home/senku/.face"
+                    source: "file:///home/alex/.face"
                     fillMode: Image.PreserveAspectCrop
                     asynchronous: true
                     layer.enabled: true
