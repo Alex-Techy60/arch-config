@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set some variables
-wall_dir="$HOME/Pictures/rd-wallpaper-collection/wallpapers/"
+wall_dir="$HOME/Documents/Wallpaper/"
 cacheDir="$HOME/.cache/wallpapers"
 last_wall_file="$HOME/.cache/last_wallpaper"
 

@@ -28,9 +28,6 @@ ShellRoot {
     property bool authenticated: false
     property bool sessionLocked: true
 
-    property string systemAmbientText: ""
-    property string timeWhisperText: ""
-
     // ── Shim ─────────────────────────────────────────────────────────────────
 
     SddmShim {
@@ -58,32 +55,6 @@ ShellRoot {
     }
 
     // ── Some soothing texts ──────────────────────────────────────────────────
-
-    Process {
-        command: [Quickshell.env("HOME") + "/.local/bin/lifeos-util", "--system-ambient"]
-        // running: true
-
-        stdout: SplitParser {
-            // splitMarker: ""
-            onRead: text => {
-                systemAmbientText = text.trim();
-            }
-        }
-        Component.onCompleted: running = true
-    }
-
-    Process {
-        command: [Quickshell.env("HOME") + "/.local/bin/lifeos-util", "--time-whisper"]
-        // running: true
-
-        stdout: SplitParser {
-            // splitMarker: ""
-            onRead: text => {
-                timeWhisperText = text.trim();
-            }
-        }
-        Component.onCompleted: running = true
-    }
 
     // ── Theme ────────────────────────────────────────────────────────────────
 
@@ -193,14 +164,6 @@ ShellRoot {
                         font.pixelSize: 18 * s
                         font.letterSpacing: 1 * s
                         bottomPadding: 10 * s
-                    }
-                    // some soothing time whisper text
-                    Text {
-                        text: timeWhisperText
-                        color: shellRoot.cSub
-                        font.family: mainFont.name
-                        font.pixelSize: 18 * s
-                        font.letterSpacing: 1 * s
                     }
                 }
             }

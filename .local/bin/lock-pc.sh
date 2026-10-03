@@ -1,2 +1,2 @@
-hyprlock &
-sleep 1 && hyprctl dispatch dpms off
+#!/bin/sh
+exec hyprlock

@@ -376,7 +376,7 @@ Item {
                 spacing: 4
 
                 Text {
-                    text: "senku"
+                    text: "Alex"
                     color: Theme.on_surface
                     font { family: "Google Sans Medium"; pixelSize: 16 }
                 }
