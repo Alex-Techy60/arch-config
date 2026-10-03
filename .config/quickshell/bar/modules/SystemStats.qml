@@ -203,7 +203,7 @@ Rectangle {
                     family: "Google Sans Medium"
                     pointSize: 10
                 }
-                text: root.activeSink?.audio ? Math.round(root.volumeLevel * 100) + "%" : "--%"
+                text: root.activeSink?.audio ? Math.round(root.volumeLevel) + "%" : "--%"
             }
 
             TapHandler {

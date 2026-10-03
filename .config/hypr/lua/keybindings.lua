@@ -21,6 +21,9 @@ hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("quickshell ipc call appLauncher togg
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("~/.local/bin/lock-pc.sh"))
 hl.bind("ALT + F", hl.dsp.window.fullscreen())
 
+-- togBar
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("quickshell ipc call topBar toggle"))
+
 -- wallpaper picker
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("quickshell -p ~/.config/quickshell/utilities/wallpicker"))
 

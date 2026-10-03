@@ -23,7 +23,7 @@ PanelWindow {
     exclusiveZone: 1 // se the exclusive Zon, I too know nothing about it, but it has become a habit to me.
 
     WlrLayershell.layer: WlrLayer.Overlay // type of shell in wayland, ie the window type for this panel window is set to Overlay type, ie it is not a floating or tiled window, but like a overlay.
-    WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive // provide it the keyboard focus. This .Exclusive means, regardless of whatever windows are open, the keyboard input goes to this panel window
+    WlrLayershell.keyboardFocus: WlrKeyboardFocus.OnDemand // provide it the keyboard focus. This .Exclusive means, regardless of whatever windows are open, the keyboard input goes to this panel window
 
     FileView { // required for getting a file, reading the file, this is a child of our main
         path: Quickshell.shellPath("config.json") // get the path. here config.json should be present in same directory as shell.qml (this file)

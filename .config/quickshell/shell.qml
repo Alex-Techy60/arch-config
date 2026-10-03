@@ -75,3 +75,4 @@ ShellRoot {
         id: audioVisualizer
     }
 }
+
